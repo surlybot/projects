@@ -1,0 +1,49 @@
+.log {color:gray; margin-top: 11px;}
+.login {text-align: right;}
+.logout {text-decoration: underline;}
+.main {font-size: 170;font-family: 'Lobster', Georgia, Times, serif;padding-top:50px;text-align: right;}
+.main2 {font-size: 100;font-family: 'Lobster', Georgia, Times, serif;padding-top:50px;text-align: right;}
+.main3 {font-size: 90;font-family: 'Lobster', Georgia, Times, serif;padding-top:50px;}
+.main4 {font-size: 40;font-family: 'Lobster', Georgia, Times, serif;margin-left: 18px;}
+.main5 {font-size: 40;font-family: 'Lobster', Georgia, Times, serif;}
+.hero-unit {color:white; background-color: #FE3F44; border-radius: 60px;background-size:40%;box-shadow: 3px 3px 5px 2px black;margin:50px;}
+.nav {font-size: 18;}
+.trash {text-align:right;}
+
+#termfirst {font-size: 20;}
+#definitionfirst {font-size: 20;}
+#showboth {font-size: 20;}
+
+
+.index_box {opacity:0.7;background-color: #130873; border-radius: 20px;width:350px;height:100px;margin-top:20px;margin-left: 800px;box-shadow: 3px 3px 5px 2px black;}
+.index_box_text {font-size: 50;color:white;font-family: 'Lobster', Georgia, Times, serif;padding-top:40px;text-align: center;}
+#register {font-size:25;height:35px;padding-top:20px;width:100px;}
+.register{text-align:right;margin-right: 18px;margin-top: 30px;}
+
+.about {font-size: 20;background-color:white;border-radius: 20px;width:400px;height:480px;float:right;margin-top: 60px;opacity:.85;box-shadow: 3px 3px 5px 2px black;}
+.about_text {font-size: 20;padding-top:40px;padding-left:40px; padding-right:40px;line-height: 150%;}
+.contact_links {font-size: 15; text-align: center;}
+
+.term_show {opacity:0.6;background-color:white; border-radius: 20px; width:200px; padding: 20px; margin:10px;float:right;box-shadow: 3px 3px 5px 2px black;}
+.term {background-color:white; border-radius: 20px; margin:10px;float:left;}
+.term_title {font-size: 25;}
+.view_terms{float:left;width:50%;margin-top: 50px;}
+.term_form{float:left;width:50%;}
+
+.definition {font-size: 20; padding:20px;}
+.invisible {visibility:hidden;}
+
+
+.card {opacity:0.6;background-color:white;color:black; border-radius: 20px;width:200px;height:250px;float:left;margin:15px;box-shadow: 3px 3px 5px 2px black;}
+.card_term {font-size: 25; padding: 10px; margin:5px;color:#FFA900;}
+.card_definition {font-size: 20; padding: 10px; margin:5px;}
+
+.collection {opacity:0.7;background-color: #FE3F44; color:white; border-radius: 20px;width:250px;height:150px;float:left;margin:20px;box-shadow: 3px 3px 5px 2px black;}
+.collection_title{font-size: 25; padding: 10px; margin:5px;color:#FFCF73;}
+.collection_description{font-size: 16; padding: 10px; margin:5px;}
+#form_collection{margin-left: 20px;}
+
+body {background-color: #00808A;background-image: url("/static/img/kid.jpg");font-size:14;background-size:cover;}
+h1 {font-size:80; font-family: 'Lobster', Georgia, Times, serif;}
+a {color:#FFA400;}
+a:hover {text-decoration:none;}
