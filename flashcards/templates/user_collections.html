@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% for collection in collections %}
+<div class="main">{{collection.title}}</div>
+<p>
+{{collection.description}}
+</p>
+{% endfor %}
+{% endblock %}

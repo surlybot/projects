@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="term_form">
+	<div class="main3">{{collection.title}}</div>
+	<br><br>
+	<h2>{{collection.description}}</h2>
+	<br>
+
+
+	{% if collection.terms %}
+	<a class="btn btn-primary btn-lg" role="button" href="/collection/{{collection.id}}/study">study</a>
+	{% endif %}
+
+	{% if collection.user_id == current_user.id %}
+	<a class="btn btn-danger btn-lg" role="button" href="{{url_for("delete_collection", user_id=collection.user_id, collection_id=collection.id)}}">delete</a>
+	<br><br><br>
+	<div class="main5">add term</div>
+	<br>
+	<form method="post">
+	    <input type="text" name="term" maxlength="18" placeholder="Term"><br>
+	    <textarea name="definition" maxlength="40" placeholder="Definition"></textarea><br>
+	    <input type="submit">
+	</form>
+	{% endif %}
+</div>
+
+<div class="view_terms">
+{% for term in collection.terms %}
+	<div class="term_show">
+		<p class="term_title">{{term.term}}</p>
+		{% if collection.user_id == current_user.id %}
+		<a href="{{url_for("delete_term", term_id=term.id, collection_id=collection.id)}}"><div class="trash"><i class="icon-trash"></i></div></a>
+		{% endif %}
+	</div>
+
+{% endfor %}
+</div>
+
+{% endblock %}

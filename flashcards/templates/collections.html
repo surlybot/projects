@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="main2">all flashcard sets</div>
+<br><br><br><br>
+{% for collection in collections %}
+<a href="{{url_for("view_collection", id=collection.id)}}">
+<div class="collection">
+		<p class="collection_title">{{collection.title}}</p>
+		<p class="collection_description">{{collection.description}}</p>
+</div>
+</a>
+
+{% endfor %}
+{% endblock %}

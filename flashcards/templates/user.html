@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<div class="main2">{{ first_name }}'s collection</div>
+
+{% if user_id == current_user.id %}
+
+<div class="main4">Create new</div>
+<br>
+<form id = "form_collection" method="post"> 
+    <input type="text" name="title" maxlength="15" placeholder="Collection Title"><br>
+    <textarea name="description" maxlength="40" placeholder="Description"></textarea><br>
+    <input type="submit">
+</form>
+
+{% endif %}
+{% for collection in collections %}
+<a href="{{url_for("view_collection", id=collection.id)}}">
+	<div class="collection">
+		<p class="collection_title">{{collection.title}}</p>
+		<p class="collection_description">{{collection.description}}</p>
+	</div>
+</a>
+
+{% endfor %}
+
+
+
+{% endblock %}

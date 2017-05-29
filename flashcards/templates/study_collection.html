@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>{{collection.title}}</h1>
+<br>
+<h2>{{collection.description}}</h2>
+<br>
+<div class="btn-group">
+  <button type="button" id="termfirst" class="btn btn-warning">Show Terms</button>
+  <button type="button" id="definitionfirst" class="btn btn-info">Show Definitions</button>
+  <button type="button" id="showboth" class="btn btn-danger">Show All</button>
+</div>
+<br>
+
+{% for term in collection.terms %}
+<div class="card">
+<p class="card_term primary">{{term.term}}</p>
+<p class="card_definition secondary invisible">{{term.definition}}</p>
+</div>
+
+{% endfor %}
+
+{% endblock %}
